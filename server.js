@@ -1,12 +1,13 @@
 const express = require('express')
-const connect = require("./config/db")
+const connect = require("./Config/db")
 const Errorhandler = require("./middleware/errorhandler")
 const app = express();
 const signup = require("./routes/musicSignup");
 const login = require("./routes/musiclogin")
 const application = require("./routes/musicData")
 const cors = require("cors")
-require('dotenv').config();
+// require('dotenv').config();
+
 connect();
 
 
